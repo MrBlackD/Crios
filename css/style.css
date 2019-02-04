@@ -1,0 +1,83 @@
+body{
+    font-family: "Montserrat","PT Sans",sans-serif;
+    line-height: 18px;
+    font-size: 18px;
+}
+
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.header-title{
+    font-size: 48px;
+    line-height: 18px;
+    color:#43a9ff;
+}
+
+.header-subtitle{
+    color:#4b5863;
+    font-weight: bold;
+
+    opacity: 0.15;
+}
+
+.container h1{
+    font-size: 48px;
+}
+
+.button{
+    font:inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color:#43a9ff;
+
+    text-decoration: none;
+}
+.caption{
+    color:#4b5863;
+
+    opacity: 0.25;
+}
+
+.first-section h2,
+.second-section h3,
+.third-section h3,
+.fourth-section h2,
+.fifth-section h2{
+    font-size: 48px;
+}
+.list-item-description{
+    color:#4b5863;
+    font-size: 14px;
+    line-height: 24px;
+
+    opacity: 0.35;
+}
+
+.second-section p,
+.third-section p,
+.fourth-section p{
+    font-size: 16px;
+    line-height: 36px;
+    color:#4b5863;
+
+    opacity: 0.35;
+}
+
+.third-section h3{
+    color:#43a9ff;
+}
+.fourth-section h2{
+    color:#fe3254;
+}
+.author-name{
+    font-size: 16px;
+    line-height: 18px;
+}
