@@ -32,7 +32,7 @@ body {
   opacity: 0.15;
 }
 .container {
-  min-width: 1500px;
+  width: 1500px;
   padding: 0 15px;
 
   margin: 0 auto;
@@ -149,11 +149,12 @@ body {
 .header-button.search {
   background-image: url("../img/search.png");
 }
-
-.zero-section {
+.zero-section{
   background-image: url("../img/Horse.jpg");
-  background-size: cover;
-
+  background-position-x: center; 
+  background-repeat: no-repeat;
+}
+.zero-section div {
   text-align: center;
 
   height: 1333px;
@@ -227,25 +228,80 @@ body {
 .second-section {
   display: flex;
   flex-wrap: wrap;
+
+  justify-content: center;
+
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
-.second-section div,
+.second-section .winter{
+  background-image: url(../img/winter.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  
+  width: 50%;
+}
+.second-section .logs{
+  background-image: url(../img/woods.jpg);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  
+  width: 50%;
+}
+
+.second-section .text-block,
 .second-section img {
   width: 50%;
 }
 .first-section {
   margin-bottom: 120px;
 }
-.second-section div {
-  padding: 0 120px;
-  padding-top: 170px;
+.second-section .text-block {
+  padding: 162px 120px;
+  
   box-sizing: border-box;
+
+  background-color: #f7f8fb;
 }
 
 .third-section {
   display: flex;
   flex-wrap: wrap;
+
+  position: relative;
 }
+
+.third-section::before{
+  content: "";
+
+  background-image: url(../img/Snowflake.png);
+
+  width: 674px;
+  height: 674px;
+
+  position: absolute;
+  top: -90px;
+  left: -180px;
+  
+  z-index: -1;
+}
+
+.third-section::after{
+  content: "";
+
+  background-image: url(../img/Snowflake2.png);
+
+  width: 648px;
+  height: 788px;
+
+  position: absolute;
+  bottom: -180px;
+  right: -234px;
+  
+  z-index: -1;
+}
+
 
 .third-section div {
   width: 50%;
@@ -272,12 +328,15 @@ body {
 
 .fourth-section {
   background-image: url("../img/Photo.jpg");
-  background-position-x: -200px;
+  background-position-x: center;
   background-repeat: no-repeat;
   background-color: #f7f8fb;
+
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
-.fourth-section div {
+.fourth-section .text-block {
   padding-top: 200px;
   padding-left: 50px;
   padding-right: 120px;
@@ -300,12 +359,13 @@ body {
 }
 .fourth-section .author-grade {
   margin: 0;
-  padding-bottom: 115px;
+  padding-bottom: 90px;
 }
 
 .fifth-section {
   background-image: url("../img/House.jpg");
   background-position-x: center;
+  background-repeat: no-repeat;
 
   padding-top: 130px;
   min-width: 1500px;
@@ -316,5 +376,5 @@ body {
   margin-bottom: 100px;
 }
 .fifth-section .button {
-  margin-bottom: 1000px;
+  margin-bottom: 850px;
 }
