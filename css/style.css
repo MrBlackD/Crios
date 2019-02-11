@@ -142,7 +142,8 @@ main{
 
   position: absolute;
   top: -207px;
-  left: -110px;
+  left: 50%;
+  margin-left: -207px;
 
   display: block;
 
@@ -192,12 +193,11 @@ main{
   margin: 0;
   margin-bottom: 8px;
 }
-.list li:not(:last-of-type) {
-  /* margin-right: 30px; */
-}
+
 .list li {
   padding: 0 54px;
-  min-height: 200px;
+  width: 25%;
+  
   box-sizing: border-box;
 }
 .first-section h2 {
@@ -261,6 +261,8 @@ main{
   background-image: url(../img/winter.jpg);
   background-repeat: no-repeat;
   background-position-x: right;
+  background-color: #f7f8fb;
+  background-size: cover;
   
   width: 50%;
 }
@@ -268,6 +270,8 @@ main{
   background-image: url(../img/woods.jpg);
   background-repeat: no-repeat;
   background-position-x: left;
+  background-color: #f7f8fb;
+  background-size: cover;
   
   width: 50%;
 }
@@ -290,6 +294,8 @@ main{
 
   padding-left: 52px;
   padding-top: 161px;
+  padding-bottom: 40px;
+  width: 550px;
 }
 
 .second-section .text-block-right{
@@ -298,6 +304,7 @@ main{
   width: 617px;
   padding-top: 154px;
   padding-left: 111px;
+  padding-bottom: 40px;
 }
 
 .third-section {
@@ -379,6 +386,7 @@ main{
   background-position-x: center;
   background-repeat: no-repeat;
   background-color: #f7f8fb;
+  background-size: cover;
 
   max-width: 2000px;
   margin: 0 auto;
